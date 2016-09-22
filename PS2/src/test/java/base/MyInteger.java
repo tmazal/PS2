@@ -4,7 +4,6 @@ public class MyInteger {
 	private int iValue;
 
 	public MyInteger(int iValue) {
-		super();
 		this.iValue = iValue;
 	}
 
