@@ -118,8 +118,10 @@ public class MyInteger_Test {
 	public void TestEquals2(){
 		MyInteger a = new MyInteger(5);
 		MyInteger b = new MyInteger(7);
+		MyInteger c = new MyInteger(7);
 		assertTrue(a.equals(a));
 		assertTrue(b.equals(b));
 		assertFalse(a.equals(b));
+		assertTrue(c.equals(b));
 	}
 }
