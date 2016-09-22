@@ -12,7 +12,7 @@ public class MyInteger {
 	}
 
 	public boolean isEven() {
-		return MyInteger.isEven(iValue);
+		return MyInteger.isEven(iValue); // returns True if iValue is even
 	}
 
 	public boolean isOdd() {
@@ -24,7 +24,7 @@ public class MyInteger {
 	}
 
 	public static boolean isEven(int x) {
-		if (x % 2 == 0)
+		if (x % 2 == 0) 	// actual even check just coded once for briefer code
 			return true;
 		else
 			return false;
@@ -52,9 +52,8 @@ public class MyInteger {
 		return true;
 	}
 		
-
 	public static boolean isEven(MyInteger myInt) {
-		return MyInteger.isEven(myInt.getiValue());
+		return MyInteger.isEven(myInt.getiValue()); // returns True is specified value is even
 	}
 
 	public static boolean isOdd(MyInteger myInt) {
@@ -66,14 +65,14 @@ public class MyInteger {
 	}
 
 	public boolean equals(int x) {
-		if (x == iValue)
-			return true;
+		if (x == iValue) 
+			return true;  // returns True if the entered integer is equal to the specified value
 		else
 			return false;
 	}
 
 	public boolean equals(MyInteger myInt) {
-		if (myInt.getiValue() == iValue)
+		if (myInt.getiValue() == iValue) // returns true if object value is equal to specified value
 			return true;
 		else
 			return false;
